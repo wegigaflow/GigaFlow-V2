@@ -1,0 +1,125 @@
+/* Container for the whole section */
+.service-container {
+    width: 100%;
+    height: 100%;
+    padding: 70px 0px 90px;
+    background: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main content wrapper */
+  .service-content {
+    width: 1288px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Header section */
+  .service-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-header-background {
+    position: relative;
+    width: 165px;
+    height: 51px;
+    background: rgba(217, 217, 217, 0.15);
+    border-radius: 40px;
+    border: 1px solid rgba(173, 171, 171, 0.50);
+  }
+  
+  .service-header-text {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+  }
+  
+  .service-icon-container {
+    position: absolute;
+    right: 0;
+    top: 3px;
+  }
+  
+  .service-icon-background {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    background: #020202;
+    border-radius: 50%;
+  }
+  
+  .service-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    left: 8px;
+  }
+  
+  /* Title for Our Services */
+  .service-title {
+    color: white;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin: 60px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Service cards container */
+  .service-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  /* Each row of cards */
+  .service-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  
+  /* Individual service card */
+  .service-card {
+    width: 309px;
+    height: 174px;
+    background: white;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-card-img {
+    width: 92px;
+    height: 93px;
+  }
+  
+  .service-card-title {
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  

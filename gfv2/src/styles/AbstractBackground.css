@@ -1,0 +1,15 @@
+.abstract-background {
+    width: 50rem; /* Retained existing size */
+    height: 20rem; /* Retained existing size */
+    opacity: 1; /* Kept existing opacity */
+    background: linear-gradient(0deg, #7bc7f4 14%, #41718d 35%);
+    box-shadow: 503.6px 503.6px 503.6px rgba(0, 0, 0, 0.5); /* Kept existing shadow */
+    border-radius: 50%; /* Perfect circle */
+    filter: blur(503.60px); /* Kept existing blur */
+    position: absolute;
+    margin-top: -15rem;
+    top: 0px; /* Fixed at the top */
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%); /* Keeps it centered */
+    z-index: 0; /* Stays behind other content */
+}

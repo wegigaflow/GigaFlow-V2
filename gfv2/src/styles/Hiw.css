@@ -1,0 +1,136 @@
+.hiw-section {
+    width: 100%;
+    background-color: #FAFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    margin-bottom: 2rem;
+  }
+  
+  .hiw-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Updated Button Styles */
+  .hiw-button {
+    width: 245px;
+    height: 57px;
+    position: relative;
+  }
+  
+  /* Button Background */
+  .hiw-button-background {
+    width: 245px;
+    height: 57px;
+    position: absolute;
+    background: rgba(232, 232, 232, 0.50);
+    border-radius: 30px;
+    border: 1px solid #CBCBCB;
+  }
+  
+  /* Button Text */
+  .hiw-button-text {
+    width: 157px;
+    height: 15px;
+    position: absolute;
+    left: 21px;
+    top: 22px;
+    color: black;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  /* Button Icon Container */
+  .hiw-button-icon-container {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 194px;
+    top: 7px;
+  }
+  
+  /* Icon Background (Circle) */
+  .hiw-button-icon-background {
+    width: 45px;
+    height: 45px;
+    background-color: #020202;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  /* Embedded SVG Icon */
+  .hiw-button-svg-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 11px;
+    top: 11px;
+  }
+  
+  .hiw-heading {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  
+  .hiw-steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 50px;
+  }
+  
+  .hiw-step {
+    width: 245px;
+    height: 220px;
+    background-color: rgba(226, 226, 226, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hiw-step-icon-container {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    border-radius: 10px; /* This gives a rectangular shape with slight rounding */
+    margin-bottom: 15px;
+  }
+  
+  .hiw-step-icon {
+    width: 24px; /* Adjust this based on the size of your icon */
+    height: 24px;
+  }
+  
+  .hiw-step h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .hiw-step p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 20rem;
+    color: #1B1B1B;
+    letter-spacing: 0.20px;
+    text-align: justify;
+  }
+  

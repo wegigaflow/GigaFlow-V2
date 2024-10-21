@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #0b0d0f; /* Match your background color */
+    color: white;
+}
+
+.greeting-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.095);
+    padding: 0px 15px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+/* Circle container for the hand icon */
+.greeting-icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8px;
+    width: 35px; /* Adjust the size of the circle */
+    height: 35px; /* Adjust the size of the circle */
+    border-radius: 50%; /* Make it a perfect circle */
+    background-color: #d9d9d933; /* Circle background color */
+}
+
+.greeting-hand-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Greeting text styling */
+.greeting-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+
+
+.hero-heading-container {
+    margin-top: -10px;
+    text-align: center; /* Center align all headings */
+}
+
+.hero-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    word-spacing: 5px;
+    font-weight: 500;
+    margin-bottom: 5px; /* Space between the lines */
+}
+
+.highlighted-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+    position: relative;
+    gap: 20px;
+    display: inline-flex; /* Use flexbox to align "Ambitious" and "Brands" */
+    align-items: center; /* Center align vertically */
+}
+
+/* Container for the ambitious text with rectangle */
+.ambitious-container {
+    position: relative; /* Position relative for corner dots and rectangle */
+    padding: 0 20px; /* Adjust padding for visual spacing */
+}
+
+/* Rectangle styling */
+.ambitious-container::before {
+    content: '';
+    position: absolute;
+    top: -1px; /* Adjust top position */
+    left: -1px; /* Adjust left position */
+    right: -1px; /* Adjust right position */
+    bottom: -1px; /* Adjust bottom position */
+    border: 2px solid #0093E6; /* Increase thickness of rectangle border */
+    border-radius: 5px; /* Slightly rounded corners */
+    z-index: 1; /* Place behind the text */
+    background-color: rgba(0, 146, 230, 0); /* Optional: Add a light background for better visibility */
+}
+
+/* Ambitious text styling */
+.ambitious-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Corner dots styles */
+.corner-dot {
+    position: absolute;
+    width: 8px; /* Increased size for visibility */
+    height: 8px; /* Increased size for visibility */
+    background: #0093E6;
+    border-radius: 50%; /* Circle */
+}
+
+.top-left {
+    top: -4px; /* Adjust as needed */
+    left: -4px; /* Adjust as needed */
+}
+
+.top-right {
+    top: -4px; /* Adjust as needed */
+    right: -4px; /* Adjust as needed */
+}
+
+.bottom-left {
+    bottom: -4px; /* Adjust as needed */
+    left: -4px; /* Adjust as needed */
+}
+
+.bottom-right {
+    bottom: -4px; /* Adjust as needed */
+    right: -4px; /* Adjust as needed */
+}
+
+.brands-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+/* Subtext */
+.hero-subtext {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: #E9E9E9;
+    text-align: center;
+    max-width: 750px;
+    line-height: 25px;
+    margin: 7px 0px; /* Space between subtext and buttons */
+}
+
+.hero-buttons {
+    margin: 20px;
+    display: inline-flex; /* For horizontal alignment */
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+.button-container-hero {
+    display: flex; /* Flexbox for button alignment */
+    align-items: center; /* Center align items vertically */
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    border: none; /* Remove default button border */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add hover transition */
+}
+
+.build-website-button {
+    padding: 5px 20px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 42px;
+    color: black;
+}
+
+.build-website-button:hover {
+    background-color: rgb(255, 255, 255); /* Slight hover effect */
+}
+
+.talk-expert-button {
+    padding: 5px 15px;
+    color: white;
+    border-radius: 42px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(50px);
+}
+
+.talk-expert-button:hover {
+    background-color: rgba(255, 255, 255, 0.192); /* Slight hover effect */
+}
+
+.icon-container-bw {
+    width: 45px; /* Circle size */
+    height: 45px; /* Circle size */
+    background-color: #0093E6; /* Blue background */
+    border-radius: 100%; /* Make it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -13px;
+    margin-left: 10px; /* Space between text and icon */
+}
+
+.icon-container-te {
+    width: 45px; /* Circle size */
+    height: 45px; /* Circle size */
+    background-color: #000000; /* Black background */
+    border-radius: 100%; /* Make it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -9px;
+    margin-left: 10px; /* Space between text and icon */
+}
+
+.button-icon {
+    width: 25px; /* Icon size */
+    height: 25px; /* Icon size */
+}
+
+.device-mockup {
+    max-width: 70%;
+    height: auto;
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+}

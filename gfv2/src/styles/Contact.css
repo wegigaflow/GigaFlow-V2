@@ -1,0 +1,326 @@
+.contact-section {
+    padding: 50px;
+    background-color: #131313;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.get-in-touch {
+    display: flex;
+    justify-content: center; /* Center the content horizontally if needed */
+    padding: 10px; /* Add some padding if needed */
+}
+
+.rectangle {
+    background-color: rgba(217, 217, 217, 0.15); /* Background color with 15% opacity */
+    border: 2px solid rgba(173, 171, 171, 0.5); /* Stroke color with 50% opacity */
+    border-radius: 40px; /* Rounded corners */
+    padding: 6px 10px; /* Add padding for content spacing */
+    display: flex; /* Align inner elements */
+    align-items: center; /* Center the content vertically */
+}
+
+.get-in-touch-element {
+    display: flex;
+    align-items: center; /* Align text and circle vertically */
+}
+
+.get-in-touch-text {
+    margin-left: 10px;
+    margin-right: 16px; /* Space between text and circle */
+    font-size: 16px; /* Adjust as needed */
+    /* Add any other styles you want for the text */
+}
+
+.circle-icon-container {
+    margin-right: -2px;
+    width: 45px; /* Set the width of the circle */
+    height: 45px; /* Set the height of the circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: black; /* Circle background color */
+    display: flex;
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+}
+
+.circle-icon {
+    width: 25px; /* Adjust the size of the icon as needed */
+    height: 25px; /* Adjust the size of the icon as needed */
+    /* Add any other styles you want for the icon */
+}
+.contact-heading {
+    font-family: 'Raleway',sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.contact-container-gf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-form-gf {
+    background-color: #4241413e; /* Changed to white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    animation: slideInUp 0.8s ease-in-out;
+  }
+  
+  .form-group-gf {
+    margin-bottom: 20px;
+    position: relative; /* Added for absolute positioning of icons */
+  }
+  
+  .input-label-gf {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ffffff; /* Adjust color as needed */
+    margin-inline-start: 5px;
+  }
+  
+  .input-field-gf {
+    width: 100%;
+    padding: 10px 40px; /* Add padding to make space for icons */
+    font-size: 14px;
+    border: 1px solid rgba(76, 76, 76, 1);
+    border-radius: 4px;
+    background-color: #13131344;
+    transition: border-color 0.3s;
+    color: rgb(209, 209, 209);
+  }
+
+.option-gf
+{
+    color: rgb(0, 0, 0);
+}
+  .input-field-gf:focus {
+    border-color: #007bff; /* Change to your primary color */
+    outline: none;
+  }
+  .input-container-gf {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .icon-inside-gf {
+    position: absolute;
+    left: 10px; /* Adjust the position of the icon inside the input */
+    width: 20px; /* Set icon width */
+    height: 20px; /* Set icon height */
+    pointer-events: none; /* Make sure the icon doesn't interfere with input actions */
+  }
+  
+  
+  .textarea-field-gf {
+    width: 100%;
+    border: 1px solid rgba(76, 76, 76, 1);
+    border-radius: 5px;
+    font-size: 14px;
+    min-height: 150px; /* Set a fixed height for the textarea */
+  }
+  
+  .select-field-gf {
+    color: white;
+    width: 100%;
+    padding-left: 40px; /* Adjust padding for select input */
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgba(76, 76, 76, 1);
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .icon-container-gf {
+    position: absolute;
+    left: 10px; /* Adjust positioning */
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    pointer-events: none; /* Prevent icon from blocking input */
+  }
+  
+  .select-dropdown-gf {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  .select-dropdown-gf:focus {
+    border-color: #007bff; /* Change to your primary color */
+    outline: none;
+  }
+
+.text-area-field-gf {
+    width: 100%;
+    padding-left: 20px; /* Same logic for textarea */
+    padding-right: 20px;
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+    border: 1px solid rgba(76, 76, 76, 1);
+    border-radius: 5px;
+    font-size: 1rem;
+    min-height: 150px; /* Set a fixed height for the textarea */
+    resize: none; /* Disable resizing */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #13131344; /* Background color */
+  }
+.text-area-field-gf:focus {
+    border-color: #007bff; /* Change to your primary color */
+    outline: none;
+  }
+  .required-gf{
+    margin-left: 2px;
+    color: red;
+    font-size: 25px;
+  }
+  .file-type-note-gf {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    display: flex;
+    margin-top: 5px;  /* Optional to add spacing from the input */
+}
+  .file-size-note-gf {
+    color: red;
+    font-size: 12px;
+    display: flex;
+    margin-top: 5px;  /* Optional to add spacing from the input */
+}
+  .button-gf {
+    display: inline-block;
+    background-color: #007bff; /* Your button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-gf:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+  }
+  
+  .button-gf:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .footer-note-gf {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #666; /* Adjust color as needed */
+  }
+  .submit-button-gf {
+    background-color: rgba(0, 147, 230, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    animation: buttonPulse 2s infinite;
+  }
+  
+  .submit-button-gf:hover {
+    background-color: rgba(0, 82, 128, 1);
+  }
+  .disabled-button-gf {
+    background-color: #cccccc; /* Disabled button color */
+    cursor: not-allowed; /* Show not-allowed cursor for disabled button */
+    color: #9f9f9f;
+  }
+  
+  .submit-button-gf:disabled {
+    pointer-events: none; /* Ensure the button is not clickable when disabled */
+  }
+
+  .char-count-gf {
+    margin-inline-start: 30rem;
+    font-size: 0.9em; /* Adjust font size as needed */
+    margin-top: 5px; /* Space between the textarea and character count */
+  }
+
+  .checkbox-container-gf {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between checkbox and submit button */
+  }
+  
+  .checkbox-container-gf input {
+    margin-right: 10px; /* Space between checkbox and text */
+  }
+  
+  .terms-link-gf {
+    text-decoration: underline;
+    color: rgb(55, 153, 218); /* You can adjust the color as needed */
+    cursor: pointer;
+  }
+  
+  .terms-modal-gf {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure the modal is on top */
+  }
+  
+  .modal-content-gf {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    width: 80%; /* You can adjust the width */
+    max-width: 500px; /* Max width for large screens */
+  }
+  
+  .close-gf {
+    color: red; /* Close button color */
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
