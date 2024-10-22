@@ -78,6 +78,49 @@ app.post('/contacts', upload.single('file'), (req, res) => {
     });
 });
 
+app.post('/subscribe', (req, res) => {
+    const { email } = req.body;
+  
+    if (!email) {
+      return res.status(400).send({ error: 'Email is required' });
+    }
+  
+    const newSubscription = { email };
+  
+    // Use the same dbPath as the rest of the server
+    fs.readFile(dbPath, 'utf8', (err, data) => {
+      if (err) {
+        return res.status(500).send({ error: 'Failed to read database' });
+      }
+  
+      let dbData;
+      try {
+        dbData = JSON.parse(data);
+      } catch (parseError) {
+        return res.status(500).send({ error: 'Invalid JSON format in db.json' });
+      }
+  
+      // Ensure that "subscribers" is an array in db.json
+      if (!Array.isArray(dbData.subscribers)) {
+        dbData.subscribers = [];
+      }
+  
+      // Add the new subscription
+      dbData.subscribers.push(newSubscription);
+  
+      // Write the updated data back to db.json
+      fs.writeFile(dbPath, JSON.stringify(dbData, null, 2), (err) => {
+        if (err) {
+          return res.status(500).send({ error: 'Failed to write to database' });
+        }
+  
+        res.status(201).send({ message: 'Subscription successful' });
+      });
+    });
+});
+
+
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

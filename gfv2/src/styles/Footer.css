@@ -1,0 +1,130 @@
+/* Container for the entire footer */
+.footer-container-gf {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0px;
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Top section contains the logo and social media, and the subscription form */
+.footer-top-section-gf {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Logo and social media icons */
+.footer-logo-section-gf {
+  display: flex;
+  margin-inline-start: 4.375rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo-gf {
+  width: 110px;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons-gf {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social-icons-gf img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Subscription section */
+.footer-subscribe-section-gf {
+  margin-inline-end: 4.375rem;
+  max-width: 500px;
+}
+
+.footer-subscribe-title-gf {
+  font-size: 20px;
+  font-weight: 500;
+  margin-inline-end: 23rem;
+  margin-bottom: 10px;
+}
+
+.footer-subscribe-form-gf {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer-input-gf {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.footer-input-gf::placeholder{
+  color: rgba(0,0,0,0.73);
+}
+
+.footer-subscribe-button-gf {
+  padding: 10px 20px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-subscribe-button-gf:hover{
+  background-color: rgba(44, 44, 44, 0.697);
+}
+
+.footer-privacy-text-gf {
+  font-size: 12px;
+  margin-inline-end: 10rem;
+}
+
+.footer-privacy-text-gf a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Divider line */
+.footer-divider-gf {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin:20px 0;
+}
+
+/* Bottom section for copyright and legal links */
+.footer-bottom-section-gf {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  align-items: center;
+}
+
+.footer-copyright-gf {
+  font-weight: 500;
+  margin-inline-start: 4.375rem;
+}
+
+.footer-links-container-gf{
+  margin-inline-end: 4.375rem;
+}
+
+.footer-links-gf a {
+  margin-inline-end: 1.375rem;
+  text-decoration: underline;
+  color: white;
+
+}

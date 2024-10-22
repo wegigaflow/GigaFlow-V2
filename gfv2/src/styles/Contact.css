@@ -240,7 +240,7 @@
   }
   
   .submit-button-gf:hover {
-    background-color: rgba(0, 82, 128, 1);
+    background-color: rgb(3, 158, 247);
   }
   .disabled-button-gf {
     background-color: #cccccc; /* Disabled button color */

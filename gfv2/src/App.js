@@ -6,6 +6,7 @@ import Hiw from './pages/HIW.jsx';
 import Service from './pages/Service.jsx';
 import Team from './pages/Team.jsx';
 import Contact from './pages/Contact.jsx';
+import Footer from './components/Footer.jsx';
 function App() {
   return (
     <div className="App" style={{ position: 'relative', minHeight: '100vh' }}> {/* Ensure the div has relative positioning and minimum height */}
@@ -16,6 +17,7 @@ function App() {
       <Service/>
       <Team/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
