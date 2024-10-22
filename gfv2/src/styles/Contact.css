@@ -121,7 +121,7 @@
     pointer-events: none; /* Make sure the icon doesn't interfere with input actions */
   }
   
-  
+
   .textarea-field-gf {
     width: 100%;
     border: 1px solid rgba(76, 76, 76, 1);
@@ -259,17 +259,52 @@
     margin-top: 5px; /* Space between the textarea and character count */
   }
 
-  .checkbox-container-gf {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 20px; /* Space between checkbox and submit button */
-  }
-  
-  .checkbox-container-gf input {
-    margin-right: 10px; /* Space between checkbox and text */
-  }
-  
+  /* Hide the default checkbox */
+.hidden-checkbox-gf {
+  display: none;
+}
+
+/* Custom checkbox styles */
+.custom-checkbox-gf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkmark-gf {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #5fff64; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px; /* Space between checkbox and label */
+  position: relative;
+  transition: background 0.3s ease, transform 0.3s ease; /* Animation */
+}
+
+/* When checked */
+.hidden-checkbox-gf:checked + .checkmark-gf {
+  background: #4CAF50; /* Background color when checked */
+}
+
+/* Custom checkmark for the checkbox */
+.hidden-checkbox-gf:checked + .checkmark-gf::after {
+  content: '';
+  position: absolute;
+  left: 5px; /* Adjust position */
+  top: 1px; /* Adjust position */
+  width: 4px; /* Width of checkmark */
+  height: 12px; /* Height of checkmark */
+  border: solid white; /* Checkmark color */
+  border-width: 0 2px 2px 0; /* Checkmark shape */
+  transform: rotate(45deg); /* Rotate to form checkmark */
+}
+
+.terms-text-gf{
+  font-weight: 100;
+}
   .terms-link-gf {
+    margin-left: 4px;
     text-decoration: underline;
     color: rgb(55, 153, 218); /* You can adjust the color as needed */
     cursor: pointer;

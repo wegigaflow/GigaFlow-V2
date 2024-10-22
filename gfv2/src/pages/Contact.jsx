@@ -304,19 +304,18 @@ const Contact = () => {
                             {messageLength} / {characterLimit}
                         </div>
                     </div>
-                    <div className="form-group-gf">
-                        <label className="checkbox-container-gf">
-                            <input
-                                type="checkbox"
-                                checked={isChecked}
-                                onChange={handleCheckboxChange}
-                            />
-                            <span className="checkmark-gf"></span>
-                        </label>
-                        <span>
-                            By clicking this you agree to our <span className="terms-link-gf" onClick={toggleTermsModal}>Terms & Conditions</span>
-                        </span>
-                    </div>
+                    <div className="form-group-gf checkbox-container-gf">
+    <label className="custom-checkbox-gf">
+        <input
+            type="checkbox"
+            checked={isChecked}
+            onChange={handleCheckboxChange}
+            className="hidden-checkbox-gf" // Add class to hide the default checkbox
+        />
+        <span className="checkmark-gf"></span> {/* Custom checkmark */}
+        <span className='terms-text-gf'></span>By clicking this you agree to our <span className="terms-link-gf" onClick={toggleTermsModal}>Terms & Conditions</span>
+    </label>
+</div>
 
                     <button type="submit"
                         className={`submit-button-gf ${!isChecked ? 'disabled-button-gf' : ''}`}
