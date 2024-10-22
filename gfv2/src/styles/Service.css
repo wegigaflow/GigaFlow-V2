@@ -1,4 +1,5 @@
 /* Container for the whole section */
+@import 'animate.css';
 .service-container {
     width: 100%;
     height: 100%;

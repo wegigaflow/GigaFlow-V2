@@ -10,8 +10,9 @@ import globeIcon from '../assets/CurrentWeb.png';
 import fileAddIcon from '../assets/Upload.png';
 import userIcon from '../assets/FullName.png';
 import mailIcon from '../assets/Email.png';
-
+import useScrollReveal from '../hooks/useScrollReveal';
 const Contact = () => {
+    const ref = useScrollReveal('animate__fadeIn', { threshold: 0.1 });
     const characterLimit = 10000;  // Define character limit here
 
     const [formData, setFormData] = useState({
@@ -60,7 +61,7 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         const dataToSend = new FormData();
         dataToSend.append('fullName', formData.fullName);
         dataToSend.append('email', formData.email);
@@ -71,14 +72,14 @@ const Contact = () => {
         dataToSend.append('currentWebsite', formData.currentWebsite);
         dataToSend.append('file', file);  // Ensure this is a File object
         dataToSend.append('message', formData.message);
-    
+
         try {
             const response = await axios.post('http://localhost:3001/contacts', dataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
             });
-    
+
             console.log('Form successfully submitted:', response.data);
             Swal.fire({
                 title: 'Success!',
@@ -116,7 +117,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="contact-section">
+        <div id="Contact Us" className="contact-section">
             <div className="get-in-touch">
                 <div className="rectangle">
                     <div className="get-in-touch-element">

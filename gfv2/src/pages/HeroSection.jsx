@@ -4,10 +4,17 @@ import handImage from '../assets/Hand.png'; // Your hand image
 import mockupImage from '../assets/Mockup.png'; // The mockup image for devices
 import buildIcon from '../assets/BYOW.png'; // Icon for "Build your Dream Website" button
 import expertIcon from '../assets/TTE.png'; // Icon for "Talk to our Expert" button
-
+import useScrollReveal from '../hooks/useScrollReveal';
 const HeroSection = () => {
+  const ref = useScrollReveal('animate__fadeIn', { threshold: 0.1 });
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('Contact Us'); // Ensure this ID matches your Contact section
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
-    <section className="hero-section">
+    <section id="Home" className="hero-section">
       {/* Header section with greeting */}
       <header className="greeting-section">
         <div className="greeting-icon-circle">
@@ -42,7 +49,11 @@ const HeroSection = () => {
       <div className="hero-buttons">
         {/* Build Your Dream Website Button */}
         <div className="button-container-hero">
-          <button className="button build-website-button" aria-label="Build your Dream Website">
+          <button
+            className="button build-website-button"
+            aria-label="Build your Dream Website"
+            onClick={scrollToContact} // Add the onClick handler
+          >
             Build your Dream Website
             <div className="icon-container-bw">
               <img src={buildIcon} alt="Build your Dream Website icon" className="button-icon" />
@@ -52,16 +63,16 @@ const HeroSection = () => {
 
         {/* Talk to Our Expert Button */}
         <div className="button-container-hero">
-        <button
-  className="button talk-expert-button"
-  aria-label="Talk to our Expert"
-  onClick={() => window.open('https://wa.me/918903844107', '_blank')}
->
-  Talk to our Expert
-  <div className="icon-container-te">
-    <img src={expertIcon} alt="Talk to our Expert icon" className="button-icon" />
-  </div>
-</button>
+          <button
+            className="button talk-expert-button"
+            aria-label="Talk to our Expert"
+            onClick={() => window.open('https://wa.me/918903844107', '_blank')}
+          >
+            Talk to our Expert
+            <div className="icon-container-te">
+              <img src={expertIcon} alt="Talk to our Expert icon" className="button-icon" />
+            </div>
+          </button>
 
         </div>
       </div>

@@ -1,4 +1,5 @@
 /* Container for the entire footer */
+@import 'animate.css';
 .footer-container-gf {
   width: 100%;
   background-color: black;

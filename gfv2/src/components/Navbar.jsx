@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import arrowIcon from '../assets/Arrow-Contact.svg';
 import logo from '../assets/Logo-1.png';
 import '../styles/Navbar.css';
@@ -8,7 +8,10 @@ const Navbar = () => {
 
   // Function to handle click event on nav items
   const handleLinkClick = (link) => {
-    setActiveLink(link);
+    const section = document.getElementById(link);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   // Function to handle keyboard interactions
@@ -17,6 +20,34 @@ const Navbar = () => {
       handleLinkClick(link);
     }
   };
+
+  // Function to update active link based on scroll position
+  const handleScroll = () => {
+    const sections = document.querySelectorAll('section'); // Assuming each section has a <section> tag
+    let current = '';
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    // Update the active link
+    if (current) {
+      setActiveLink(current);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll); // Add scroll event listener
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // Clean up on component unmount
+    };
+  }, []);
 
   return (
     <nav className="navbar">
