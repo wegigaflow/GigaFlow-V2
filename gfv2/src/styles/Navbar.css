@@ -1,21 +1,21 @@
 /* Navbar container */
 .navbar {
-    position: fixed; /* Make the navbar fixed */
-    top: 0; /* Align it to the top */
-    left: 0; /* Align it to the left */
-    right: 0; /* Align it to the right */
-    z-index: 1000; /* Ensure it is above other content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     width: 100%;
-    height: 70px; /* Set height */
-    background-color: rgba(11, 13, 15, 0.395); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Apply blur effect */
+    height: 70px;
+    background-color: rgba(11, 13, 15, 0.395);
+    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    transition: all 0.4s ease-in-out; /* Smooth transition */
 }
-
 
 /* Logo */
 .nav_logo_gf img {
@@ -23,22 +23,16 @@
     height: 48px;
     margin-inline-start: 4rem;
 }
-.nav_button_gf{
+
+/* Buttons */
+.nav_button_gf, .nav_contact_gf_span {
     border-style: none;
     font-size: 1rem;
-    font-family: 'Noto Sans',sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: white;
     background-color: transparent;
 }
 
-.nav_contact_gf_span{
-    border-style: none;
-    font-size: 1rem;
-    font-family: 'Noto Sans',sans-serif;
-    color: white;
-    background-color: transparent;
-    margin-left: 10px;
-}
 /* Navigation links */
 .nav_links_gf {
     display: flex;
@@ -59,9 +53,6 @@
     font-weight: 100;
 }
 
-/* Active class for the clicked nav link */
-
-/* Indicator for active state */
 .nav_item_gf.active::before {
     content: '';
     width: 8px;
@@ -91,9 +82,10 @@
     margin-inline-end: 4rem;
 }
 
-.nav_contact_gf_cont:hover{
-    background-color:rgba(255, 255, 255, 0.192);
+.nav_contact_gf_cont:hover {
+    background-color: rgba(255, 255, 255, 0.192);
 }
+
 .nav_arrow_icon_gf {
     width: 44px;
     height: 44px;
@@ -105,12 +97,34 @@
     margin-left: 12px;
 }
 
-.nav_arrow_icon_gf:hover
-{
-    background: linear-gradient(270deg,#005280 0%, #0093E6 100%);
+.nav_arrow_icon_gf:hover {
+    background: linear-gradient(270deg, #005280 0%, #0093E6 100%);
 }
 
 .nav_arrow_icon_gf img {
     width: 24px;
     height: 24px;
+}
+
+/* Media Queries */
+
+/* For mobile phones (below 768px) */
+@media (max-width: 767px) {
+    .navbar {
+        height: 70px; /* Keep the original navbar height */
+    }
+
+    .nav_logo_gf img {
+        width: 100px;
+        height: 40px; /* Adjust logo size */
+        margin-inline-start: 2.475rem;
+    }
+
+    .nav_links_gf {
+        display: none; /* Hide nav links on mobile */
+    }
+
+    .nav_contact_gf_cont {
+        margin-inline-end: 2.475rem;
+    }
 }
