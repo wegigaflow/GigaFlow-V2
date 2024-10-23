@@ -23,11 +23,26 @@
     height: 48px;
     margin-inline-start: 4rem;
 }
+.nav_button_gf{
+    border-style: none;
+    font-size: 1rem;
+    font-family: 'Noto Sans',sans-serif;
+    color: white;
+    background-color: transparent;
+}
 
+.nav_contact_gf_span{
+    border-style: none;
+    font-size: 1rem;
+    font-family: 'Noto Sans',sans-serif;
+    color: white;
+    background-color: transparent;
+    margin-left: 10px;
+}
 /* Navigation links */
 .nav_links_gf {
     display: flex;
-    gap: 37px;
+    gap: 30px;
     list-style: none;
     background-color: rgba(255, 255, 255, 0.15);
     padding: 15px 42px;
@@ -78,9 +93,6 @@
 
 .nav_contact_gf_cont:hover{
     background-color:rgba(255, 255, 255, 0.192);
-}
-.nav_contact_gf_span {
-    margin-left: 10px;
 }
 .nav_arrow_icon_gf {
     width: 44px;

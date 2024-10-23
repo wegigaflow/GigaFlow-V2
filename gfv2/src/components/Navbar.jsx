@@ -57,47 +57,63 @@ const Navbar = () => {
       <ul className="nav_links_gf">
         <li
           className={`nav_item_gf ${activeLink === 'Home' ? 'active' : ''}`}
-          tabIndex={0}
-          onClick={() => handleLinkClick('Home')}
-          onKeyDown={(e) => handleKeyDown(e, 'Home')}
         >
-          Home
+          <button
+            className="nav_button_gf"
+            onClick={() => handleLinkClick('Home')}
+            onKeyDown={(e) => handleKeyDown(e, 'Home')}
+            tabIndex={0}
+          >
+            Home
+          </button>
         </li>
         <li
           className={`nav_item_gf ${activeLink === 'Why Us' ? 'active' : ''}`}
-          tabIndex={0}
-          onClick={() => handleLinkClick('Why Us')}
-          onKeyDown={(e) => handleKeyDown(e, 'Why Us')}
         >
-          Why Us
+          <button
+            className="nav_button_gf"
+            onClick={() => handleLinkClick('Why Us')}
+            onKeyDown={(e) => handleKeyDown(e, 'Why Us')}
+            tabIndex={0}
+          >
+            Why Us
+          </button>
         </li>
         <li
           className={`nav_item_gf ${activeLink === 'Our Services' ? 'active' : ''}`}
-          tabIndex={0}
-          onClick={() => handleLinkClick('Our Services')}
-          onKeyDown={(e) => handleKeyDown(e, 'Our Services')}
         >
-          Our Services
+          <button
+            className="nav_button_gf"
+            onClick={() => handleLinkClick('Our Services')}
+            onKeyDown={(e) => handleKeyDown(e, 'Our Services')}
+            tabIndex={0}
+          >
+            Our Services
+          </button>
         </li>
         <li
           className={`nav_item_gf ${activeLink === 'Our Team' ? 'active' : ''}`}
-          tabIndex={0}
-          onClick={() => handleLinkClick('Our Team')}
-          onKeyDown={(e) => handleKeyDown(e, 'Our Team')}
         >
-          Our Team
+          <button
+            className="nav_button_gf"
+            onClick={() => handleLinkClick('Our Team')}
+            onKeyDown={(e) => handleKeyDown(e, 'Our Team')}
+            tabIndex={0}
+          >
+            Our Team
+          </button>
         </li>
       </ul>
       <div className="nav_contact_gf_cont">
-        <span
+        <button
           className="nav_contact_gf_span"
-          tabIndex={0}
           onClick={() => handleLinkClick('Contact Us')}
           onKeyDown={(e) => handleKeyDown(e, 'Contact Us')}
+          tabIndex={0}
           aria-label="Contact Us"
         >
           Contact Us
-        </span>
+        </button>
         <div className="nav_arrow_icon_gf">
           <img src={arrowIcon} alt="Contact Us Arrow" />
         </div>
