@@ -117,8 +117,8 @@
     }
 
     .nav_logo_gf img {
-        width: 100px;
-        height: 40px; /* Adjust logo size */
+        width: 70px;
+        height:30px; /* Adjust logo size */
         margin-inline-start: 2.475rem;
     }
 
@@ -128,16 +128,17 @@
 
     .nav_contact_gf_cont {
         margin-inline-end: 2.475rem;
-        width: 110px;
-        height: 35px;
-        padding: 4px 6px; /* Adjust padding */
+        width: 90px;
+        height: 30px;
+        padding: 2px 4px; /* Adjust padding */
     }
     .nav_contact_gf_span{
-        font-size: 10px;
+        font-size: 8px;
+        margin-left: 2px;
     }
     .nav_arrow_icon_gf{
-        height: 27px;
-        width: 27px;
+        height: 26px;
+        width: 26px;
         border-radius: 100%;
         margin-left:10px;
     }
