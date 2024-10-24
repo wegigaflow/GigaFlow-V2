@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Footer.css';
 import GigaFlow from '../assets/Logo-1.png';
-import Facebook from '../assets/Facebook.png';
 import Instagram from '../assets/Instagram.png';
+import Email from '../assets/Email.png';
 import Linkedin from '../assets/LinkedIn.png';
 import Twitter from '../assets/Twitter.png';
 import axios from 'axios';
@@ -24,7 +24,7 @@ const Footer = () => {
     try {
       // POST request to store email in db.json
       await axios.post('http://localhost:3001/subscribe', { email });
-      
+
       // Show SweetAlert on success
       Swal.fire({
         icon: 'success',
@@ -53,9 +53,10 @@ const Footer = () => {
             <a href="https://www.instagram.com/wegigaflow/" target="_blank" rel="noopener noreferrer">
               <img src={Instagram} alt="Instagram" />
             </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <img src={Facebook} alt="Facebook" />
+            <a href="mailto:contact.gigaflowlabs@gmail.com" target="_self">
+              <img src={Email} alt="G-Mail" />
             </a>
+
             <a href="https://x.com/gigaflowlabs" target="_blank" rel="noopener noreferrer">
               <img src={Twitter} alt="Twitter" />
             </a>
@@ -80,7 +81,7 @@ const Footer = () => {
             </button>
           </div>
           <div className="footer-privacy-text-gf">
-            By subscribing this, You will agree to our <a href="#">Privacy Policy</a>.
+            By subscribing this, You will receive our company's Newsletter.
           </div>
         </div>
       </div>
@@ -91,9 +92,10 @@ const Footer = () => {
         <div className="footer-copyright-gf">©GigaFlow - All Rights Reserved 2024</div>
         <div className="footer-links-container-gf">
           <div className="footer-links-gf">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookies Settings</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/cookies-settings">Cookies Settings</a>
+
           </div>
         </div>
       </div>

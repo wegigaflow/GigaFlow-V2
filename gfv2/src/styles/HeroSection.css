@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
 @import 'animate.css';
+
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
-    background-color: #0b0d0f; /* Match your background color */
+    padding: 15vh 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #0b0d0f;
     color: white;
 }
 
@@ -20,16 +24,15 @@
     margin-bottom: 10px;
 }
 
-/* Circle container for the hand icon */
 .greeting-icon-circle {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: -8px;
-    width: 35px; /* Adjust the size of the circle */
-    height: 35px; /* Adjust the size of the circle */
-    border-radius: 50%; /* Make it a perfect circle */
-    background-color: #d9d9d933; /* Circle background color */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #d9d9d933;
 }
 
 .greeting-hand-icon {
@@ -37,7 +40,6 @@
     height: 24px;
 }
 
-/* Greeting text styling */
 .greeting-text {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
@@ -45,10 +47,9 @@
     color: white;
 }
 
-
 .hero-heading-container {
     margin-top: -10px;
-    text-align: center; /* Center align all headings */
+    text-align: center;
 }
 
 .hero-heading {
@@ -56,7 +57,7 @@
     font-size: 55px;
     word-spacing: 5px;
     font-weight: 500;
-    margin-bottom: 5px; /* Space between the lines */
+    margin-bottom: 5px;
 }
 
 .highlighted-text {
@@ -65,31 +66,28 @@
     font-weight: 500;
     position: relative;
     gap: 20px;
-    display: inline-flex; /* Use flexbox to align "Ambitious" and "Brands" */
-    align-items: center; /* Center align vertically */
+    display: inline-flex;
+    align-items: center;
 }
 
-/* Container for the ambitious text with rectangle */
 .ambitious-container {
-    position: relative; /* Position relative for corner dots and rectangle */
-    padding: 0 20px; /* Adjust padding for visual spacing */
+    position: relative;
+    padding: 0 20px;
 }
 
-/* Rectangle styling */
 .ambitious-container::before {
     content: '';
     position: absolute;
-    top: -1px; /* Adjust top position */
-    left: -1px; /* Adjust left position */
-    right: -1px; /* Adjust right position */
-    bottom: -1px; /* Adjust bottom position */
-    border: 2px solid #0093E6; /* Increase thickness of rectangle border */
-    border-radius: 5px; /* Slightly rounded corners */
-    z-index: 1; /* Place behind the text */
-    background-color: rgba(0, 146, 230, 0); /* Optional: Add a light background for better visibility */
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid #0093E6;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: rgba(0, 146, 230, 0);
 }
 
-/* Ambitious text styling */
 .ambitious-text {
     font-family: 'Raleway', sans-serif;
     font-size: 55px;
@@ -97,33 +95,32 @@
     position: relative;
 }
 
-/* Corner dots styles */
 .corner-dot {
     position: absolute;
-    width: 8px; /* Increased size for visibility */
-    height: 8px; /* Increased size for visibility */
+    width: 8px;
+    height: 8px;
     background: #0093E6;
-    border-radius: 50%; /* Circle */
+    border-radius: 50%;
 }
 
 .top-left {
-    top: -4px; /* Adjust as needed */
-    left: -4px; /* Adjust as needed */
+    top: -4px;
+    left: -4px;
 }
 
 .top-right {
-    top: -4px; /* Adjust as needed */
-    right: -4px; /* Adjust as needed */
+    top: -4px;
+    right: -4px;
 }
 
 .bottom-left {
-    bottom: -4px; /* Adjust as needed */
-    left: -4px; /* Adjust as needed */
+    bottom: -4px;
+    left: -4px;
 }
 
 .bottom-right {
-    bottom: -4px; /* Adjust as needed */
-    right: -4px; /* Adjust as needed */
+    bottom: -4px;
+    right: -4px;
 }
 
 .brands-text {
@@ -132,7 +129,6 @@
     font-weight: 500;
 }
 
-/* Subtext */
 .hero-subtext {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
@@ -140,19 +136,19 @@
     text-align: center;
     max-width: 750px;
     line-height: 25px;
-    margin: 7px 0px; /* Space between subtext and buttons */
+    margin: 7px 0px;
 }
 
 .hero-buttons {
     margin: 20px;
-    display: inline-flex; /* For horizontal alignment */
-    justify-content: center; /* Center the buttons */
-    gap: 20px; /* Space between buttons */
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .button-container-hero {
-    display: flex; /* Flexbox for button alignment */
-    align-items: center; /* Center align items vertically */
+    display: flex;
+    align-items: center;
 }
 
 .button {
@@ -164,9 +160,9 @@
     font-size: 14px;
     font-weight: 100;
     position: relative;
-    border: none; /* Remove default button border */
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s; /* Add hover transition */
+    transition: background-color 0.3s;
 }
 
 .build-website-button {
@@ -177,7 +173,7 @@
 }
 
 .build-website-button:hover {
-    background-color: rgb(255, 255, 255); /* Slight hover effect */
+    background-color: rgb(255, 255, 255);
 }
 
 .talk-expert-button {
@@ -189,36 +185,36 @@
 }
 
 .talk-expert-button:hover {
-    background-color: rgba(255, 255, 255, 0.192); /* Slight hover effect */
+    background-color: rgba(255, 255, 255, 0.192);
 }
 
 .icon-container-bw {
-    width: 45px; /* Circle size */
-    height: 45px; /* Circle size */
-    background-color: #0093E6; /* Blue background */
-    border-radius: 100%; /* Make it a circle */
+    width: 45px;
+    height: 45px;
+    background-color: #0093E6;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: -13px;
-    margin-left: 10px; /* Space between text and icon */
+    margin-left: 10px;
 }
 
 .icon-container-te {
-    width: 45px; /* Circle size */
-    height: 45px; /* Circle size */
-    background-color: #000000; /* Black background */
-    border-radius: 100%; /* Make it a circle */
+    width: 45px;
+    height: 45px;
+    background-color: #000000;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: -9px;
-    margin-left: 10px; /* Space between text and icon */
+    margin-left: 10px;
 }
 
 .button-icon {
-    width: 25px; /* Icon size */
-    height: 25px; /* Icon size */
+    width: 25px;
+    height: 25px;
 }
 
 .device-mockup {
@@ -226,4 +222,179 @@
     height: auto;
     margin-top: -10rem;
     margin-bottom: -10rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Fluid responsiveness for various screen sizes */
+
+/* For extra large screens (desktops and above) */
+@media (max-width: 1200px) {
+    .hero-heading {
+        font-size: 48px; /* Decrease heading size */
+    }
+
+    .highlighted-text {
+        font-size: 48px; /* Decrease highlighted text size */
+    }
+
+    .ambitious-container::before {
+        border-width: 1.5px; /* Adjust rectangle border thickness */
+    }
+
+    .corner-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .hero-subtext {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 13px;
+        padding: 6px 16px; /* Adjust button padding */
+    }
+
+    .icon-container-bw, .icon-container-te {
+        width: 35px;
+        height: 35px;
+    }
+
+    .button-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .device-mockup {
+        max-width: 65%;
+        margin-top: -8rem;
+        margin-bottom: -8rem;
+    }
+}
+
+/* For tablets and small laptops */
+@media (max-width: 992px) {
+    .hero-heading {
+        font-size: 42px;
+    }
+
+    .highlighted-text {
+        font-size: 42px;
+    }
+
+    .ambitious-container::before {
+        border-width: 1.2px;
+    }
+
+    .corner-dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    .hero-subtext {
+        font-size: 13px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 5px 14px;
+    }
+
+    .icon-container-bw, .icon-container-te {
+        width: 30px;
+        height: 30px;
+    }
+
+    .button-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .device-mockup {
+        max-width: 60%;
+        margin-top: -6rem;
+        margin-bottom: -6rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 36px;
+    }
+
+    .highlighted-text {
+        font-size: 36px;
+    }
+
+    .ambitious-container::before {
+        border-width: 1px;
+    }
+
+    .corner-dot {
+        width: 4px;
+        height: 4px;
+    }
+
+    .hero-subtext {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 11px;
+        padding: 4px 12px;
+    }
+
+    .icon-container-bw, .icon-container-te {
+        width: 25px;
+        height: 25px;
+    }
+
+    .button-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .device-mockup {
+        max-width: 55%;
+        margin-top: -4rem;
+        margin-bottom: -4rem;
+    }
+}
+
+/* For small mobile screens */
+@media (max-width: 576px) {
+    .hero-heading {
+        font-size: 32px;
+    }
+
+    .highlighted-text {
+        font-size: 32px;
+    }
+
+    .hero-subtext {
+        font-size: 11px;
+    }
+
+    .button {
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+
+    .icon-container-bw, .icon-container-te {
+        width: 22px;
+        height: 22px;
+    }
+
+    .button-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .device-mockup {
+        max-width: 50%;
+        margin-top: -2rem;
+        margin-bottom: -2rem;
+    }
 }

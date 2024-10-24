@@ -13,3 +13,45 @@
     transform: translateX(-50%); /* Keeps it centered */
     z-index: 0; /* Stays behind other content */
 }
+
+/* Media Queries */
+
+/* For smaller screens (below 1200px) */
+@media (max-width: 1200px) {
+    .abstract-background {
+        width: 40rem; /* Scale down width */
+        height: 16rem; /* Scale down height */
+        filter: blur(400px); /* Adjust blur */
+        box-shadow: 400px 400px 400px rgba(0, 0, 0, 0.4); /* Adjust shadow */
+    }
+}
+
+/* For tablets and small desktops (below 992px) */
+@media (max-width: 992px) {
+    .abstract-background {
+        width: 30rem; /* Further scale down width */
+        height: 12rem; /* Further scale down height */
+        filter: blur(300px); /* Adjust blur */
+        box-shadow: 300px 300px 300px rgba(0, 0, 0, 0.3); /* Adjust shadow */
+    }
+}
+
+/* For mobile phones (below 768px) */
+@media (max-width: 768px) {
+    .abstract-background {
+        width: 20rem; /* Further scale down width */
+        height: 8rem; /* Further scale down height */
+        filter: blur(200px); /* Adjust blur */
+        box-shadow: 200px 200px 200px rgba(0, 0, 0, 0.2); /* Adjust shadow */
+    }
+}
+
+/* For smaller mobile phones (below 576px) */
+@media (max-width: 576px) {
+    .abstract-background {
+        width: 15rem; /* Further scale down width */
+        height: 6rem; /* Further scale down height */
+        filter: blur(150px); /* Adjust blur */
+        box-shadow: 150px 150px 150px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+    }
+}

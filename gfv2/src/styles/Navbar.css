@@ -81,7 +81,9 @@
     font-weight: lighter;
     margin-inline-end: 4rem;
 }
-
+.nav_contact_gf_span{
+    margin-left: 10px;
+}
 .nav_contact_gf_cont:hover {
     background-color: rgba(255, 255, 255, 0.192);
 }
