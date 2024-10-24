@@ -113,7 +113,7 @@
 /* For mobile phones (below 768px) */
 @media (max-width: 767px) {
     .navbar {
-        height: 70px; /* Keep the original navbar height */
+        height: 60px; /* Keep the original navbar height */
     }
 
     .nav_logo_gf img {
