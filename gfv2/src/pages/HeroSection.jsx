@@ -4,16 +4,18 @@ import handImage from '../assets/Hand.png'; // Your hand image
 import mockupImage from '../assets/Mockup.png'; // The mockup image for devices
 import buildIcon from '../assets/BYOW.png'; // Icon for "Build your Dream Website" button
 import expertIcon from '../assets/TTE.png'; // Icon for "Talk to our Expert" button
-import useScrollReveal from '../hooks/useScrollReveal';
+
 const HeroSection = () => {
-  const ref = useScrollReveal('animate__fadeIn', { threshold: 0.1 });
+
   const scrollToContact = () => {
     const contactSection = document.getElementById('Contact Us'); // Ensure this ID matches your Contact section
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
   return (
+    <div className='hero-cont'>
     <section id="Home" className="hero-section">
       {/* Header section with greeting */}
       <header className="greeting-section">
@@ -80,6 +82,7 @@ const HeroSection = () => {
       {/* Device Mockup */}
       <img src={mockupImage} alt="Mockup of devices showcasing a website design" className="device-mockup" loading="lazy" />
     </section>
+    </div>
   );
 };
 

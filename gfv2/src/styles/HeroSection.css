@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
 @import 'animate.css';
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+}
 
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw; /* Ensure it covers the full viewport width */
     padding: 15vh 0;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
     background-color: #0b0d0f;
     color: white;
+    box-sizing: border-box; /* Include padding in width calculations */
 }
+
 
 .greeting-section {
     display: flex;
@@ -294,6 +301,7 @@
 
     .hero-subtext {
         font-size: 13px;
+        width: 42rem;
     }
 
     .button {
@@ -327,7 +335,16 @@
     .highlighted-text {
         font-size: 36px;
     }
+    .ambitious-text{
+        font-size: 36px;
+    }
+    .brands-text{
+        font-size: 36px;
+    }
+    .ambitious-container{
 
+        padding: 1px 10px;
+    }
     .ambitious-container::before {
         border-width: 1px;
     }
@@ -339,16 +356,42 @@
 
     .hero-subtext {
         font-size: 12px;
+        width: 36rem;
     }
+    .top-left {
+        top: -2px;
+        left: -2px;
+    }
+    
+    .top-right {
+        top: -2px;
+        right: -2px;
+    }
+    
+    .bottom-left {
+        bottom: -2px;
+        left: -2px;
+    }
+    
+    .bottom-right {
+        bottom: -2px;
+        right: -2px;
+    }
+    
 
     .button {
         font-size: 11px;
         padding: 4px 12px;
     }
 
-    .icon-container-bw, .icon-container-te {
+     .icon-container-te {
         width: 25px;
         height: 25px;
+    }
+    .icon-container-bw{
+        width: 25px;
+        height: 25px;
+        margin-right: -8px;
     }
 
     .button-icon {
@@ -365,16 +408,90 @@
 
 /* For small mobile screens */
 @media (max-width: 576px) {
+    .greeting-section {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 35px;
+        width: 90px;
+        background: rgba(255, 255, 255, 0.095);
+        border-radius: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .greeting-icon-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -8px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #d9d9d933;
+    }
+    
+    .greeting-hand-icon {
+        width: 18.75px;
+        height: 18.75px;
+    }
+    
+    .greeting-text {
+        font-family: "Raleway", sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        color: white;
+    }
     .hero-heading {
         font-size: 32px;
     }
 
     .highlighted-text {
+        margin-top: 10px;
         font-size: 32px;
+    }
+
+    .ambitious-text{
+        font-size: 32px;
+    }
+    .brands-text{
+        font-size: 32px;
+    }
+    .ambitious-container{
+
+        padding: 1px 10px;
+    }
+    .ambitious-container::before {
+        border-width: 1px;
+    }
+
+    .corner-dot {
+        width: 4px;
+        height: 4px;
+    }
+
+    .top-left {
+        top: -2px;
+        left: -2px;
+    }
+    
+    .top-right {
+        top: -2px;
+        right: -2px;
+    }
+    
+    .bottom-left {
+        bottom: -2px;
+        left: -2px;
+    }
+    
+    .bottom-right {
+        bottom: -2px;
+        right: -2px;
     }
 
     .hero-subtext {
         font-size: 11px;
+        width: 22rem;
     }
 
     .button {
@@ -382,7 +499,12 @@
         padding: 3px 10px;
     }
 
-    .icon-container-bw, .icon-container-te {
+   .icon-container-te {
+        width: 22px;
+        height: 22px;
+        margin-right: -6px;
+    }
+    .icon-container-bw{
         width: 22px;
         height: 22px;
     }
@@ -393,8 +515,8 @@
     }
 
     .device-mockup {
-        max-width: 50%;
+        max-width: 100%;
         margin-top: -2rem;
-        margin-bottom: -2rem;
+        margin-bottom: -6rem;
     }
 }

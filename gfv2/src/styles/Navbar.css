@@ -81,7 +81,7 @@
     font-weight: lighter;
     margin-inline-end: 4rem;
 }
-.nav_contact_gf_span{
+.nav_contact_gf_span {
     margin-left: 10px;
 }
 .nav_contact_gf_cont:hover {
@@ -128,5 +128,31 @@
 
     .nav_contact_gf_cont {
         margin-inline-end: 2.475rem;
+        width: 110px;
+        height: 35px;
+        padding: 4px 6px; /* Adjust padding */
+    }
+    .nav_contact_gf_span{
+        font-size: 10px;
+    }
+    .nav_arrow_icon_gf{
+        height: 27px;
+        width: 27px;
+        border-radius: 100%;
+        margin-left:10px;
+    }
+}
+
+/* For tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav_contact_gf_cont {
+        font-size: 15px; /* Adjust size for tablets */
+        padding: 4px 10px; /* Adjust padding */
+    }
+}
+
+@media(min-width:767px) and (max-width:910px){
+    .nav_links_gf{
+        display: none;
     }
 }
