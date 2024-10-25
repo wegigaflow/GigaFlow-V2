@@ -10,6 +10,7 @@ import CRM from '../assets/crm.png';
 import IMP from '../assets/IMP.png';
 import DataAnalytics from '../assets/Da.png';
 import useScrollReveal from '../hooks/useScrollReveal';
+
 const Service = () => {
   const ref = useScrollReveal('animate__fadeIn', { threshold: 0.1 });
   return (
