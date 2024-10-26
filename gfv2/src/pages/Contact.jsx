@@ -10,9 +10,7 @@ import globeIcon from '../assets/CurrentWeb.png';
 import fileAddIcon from '../assets/Upload.png';
 import userIcon from '../assets/FullName.png';
 import mailIcon from '../assets/Email.png';
-import useScrollReveal from '../hooks/useScrollReveal';
 const Contact = () => {
-    const ref = useScrollReveal('animate__fadeIn', { threshold: 0.1 });
     const characterLimit = 10000;  // Define character limit here
 
     const [formData, setFormData] = useState({
@@ -313,7 +311,7 @@ const Contact = () => {
             className="hidden-checkbox-gf" // Add class to hide the default checkbox
         />
         <span className="checkmark-gf"></span> {/* Custom checkmark */}
-        <span className='terms-text-gf'></span>By clicking this you agree to our <span className="terms-link-gf" onClick={toggleTermsModal}>Terms & Conditions</span>
+        <span className='terms-text-gf'>By clicking this you agree to our </span><span className="terms-link-gf" onClick={toggleTermsModal}>Terms & Conditions</span>
     </label>
 </div>
 

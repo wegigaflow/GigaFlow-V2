@@ -7,9 +7,7 @@ import Lingesh from "../assets/Lingesh.jpg";
 import Dhayananth from "../assets/Dhayananth.jpg";
 import Aditya from "../assets/Aditya.jpg";
 import TopButtonIcon from "../assets/BYP.png"; // Assuming you have a SVG or PNG for the icon
-import useScrollReveal from '../hooks/useScrollReveal';
 const Team = () => {
-  const ref = useScrollReveal('animate__fadeIn', { threshold: 0.1 });
   const teamMembers = [
     {
       name: "Gowthamaraj M S",
@@ -73,8 +71,8 @@ const Team = () => {
         <h2 className="team-title">Our Team</h2>
       </div>
       <div className="team-members">
-        {teamMembers.map((member, index) =>
-          <div className="team-card" key={index}>
+        {teamMembers.map((member) =>
+          <div className="team-card" key={member.id}>
             <img
               src={member.imgSrc}
               alt={`${member.name}`}

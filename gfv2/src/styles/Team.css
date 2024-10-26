@@ -121,3 +121,129 @@
     justify-content: center;
   }
   
+  /* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  .team-section {
+      padding: 60px 0%;
+  }
+  .team-title {
+      font-size: 32px;
+  }
+  .team-card {
+      max-width: 350px;
+  }
+  .team-photo {
+      width: 120px;
+      height: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-section {
+      padding: 40px 0%;
+  }
+  .team-title {
+      font-size: 28px;
+  }
+  .team-photo {
+      width: 100px;
+      height: 120px;
+  }
+  .team-name {
+      font-size: 16px;
+  }
+  .team-position, .team-description {
+      font-size: 10px;
+  }
+}
+
+/* Below 550px, only adjust sizing without altering layout */
+@media (max-width: 550px) {
+  .team-section {
+    padding: 40px 0%;
+}
+  .team-card {
+      max-width: 60%;
+  }
+  .team-photo {
+      width: 90px;
+      height: 110px;
+  }
+  .team-name {
+      font-size: 14px;
+  }
+  .team-position, .team-description {
+      font-size: 9px;
+  }
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  .behind-product-container {
+      font-size: 12px;
+      padding: 5px 8px;
+      border-radius: 35px;
+  }
+
+  .top-button-circle {
+      width: 35px;
+      height: 35px;
+  }
+
+  .top-button-icon {
+      width: 22px;
+      height: 22px;
+  }
+
+  .team-title {
+      font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .behind-product-container {
+      font-size: 11px;
+      padding: 4px 7px;
+      border-radius: 30px;
+  }
+
+  .top-button-circle {
+      width: 30px;
+      height: 30px;
+      margin-left: 15px;
+  }
+
+  .top-button-icon {
+      width: 20px;
+      height: 20px;
+  }
+
+  .team-title {
+      font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .behind-product-container {
+      font-size: 10px;
+      padding: 3px 6px;
+      border-radius: 25px;
+  }
+
+  .top-button-circle {
+      width: 25px;
+      height: 25px;
+      margin-left: 10px;
+  }
+
+  .top-button-icon {
+      width: 18px;
+      height: 18px;
+  }
+
+  .team-title {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+  }
+}

@@ -69,7 +69,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
-    animation: slideInUp 0.8s ease-in-out;
   }
   
   .form-group-gf {
@@ -339,24 +338,237 @@
     cursor: pointer;
   }
   
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+@media (max-width:686px)
+{
+  .char-count-gf {
+    margin-inline-start: 20rem;
+    font-size: 0.9em; /* Adjust font size as needed */
+    margin-top: 5px; /* Space between the textarea and character count */
+  }
+}
+
+@media (max-width:526px)
+{
+  .char-count-gf {
+    margin-inline-start: 15rem;
+    font-size: 0.9em; /* Adjust font size as needed */
+    margin-top: 5px; /* Space between the textarea and character count */
+  }
+}
+
+@media (max-width:450px)
+{
+  .char-count-gf {
+    margin-inline-start: 1rem;
+    font-size: 0.9em; /* Adjust font size as needed */
+    margin-top: 5px; /* Space between the textarea and character count */
+  }
+}
+
+@media (max-width:545px)
+{
+  .custom-checkbox-gf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
   
-  @keyframes slideInUp {
-    from {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  .checkmark-gf {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #5fff64; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px; /* Space between checkbox and label */
+    position: relative;
+    transition: background 0.3s ease, transform 0.3s ease; /* Animation */
   }
+  
+  /* When checked */
+  .hidden-checkbox-gf:checked + .checkmark-gf {
+    background: #4CAF50; /* Background color when checked */
+  }
+  
+  /* Custom checkmark for the checkbox */
+  .hidden-checkbox-gf:checked + .checkmark-gf::after {
+    content: '';
+    position: absolute;
+    left: 5px; /* Adjust position */
+    top: 1px; /* Adjust position */
+    width: 2px; /* Width of checkmark */
+    height: 9px; /* Height of checkmark */
+    border: solid white; /* Checkmark color */
+    border-width: 0 2px 2px 0; /* Checkmark shape */
+    transform: rotate(45deg); /* Rotate to form checkmark */
+  }
+  
+  .terms-text-gf{
+    font-size: 12px;
+    font-weight: 100;
+  }
+    .terms-link-gf {
+      font-size: 12px;
+      margin-left: 4px;
+      text-decoration: underline;
+      color: rgb(55, 153, 218); /* You can adjust the color as needed */
+      cursor: pointer;
+    }
+}
+
+@media (max-width:447px)
+{
+  .custom-checkbox-gf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .checkmark-gf {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #5fff64; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px; /* Space between checkbox and label */
+    position: relative;
+    transition: background 0.3s ease, transform 0.3s ease; /* Animation */
+  }
+  
+  /* When checked */
+  .hidden-checkbox-gf:checked + .checkmark-gf {
+    background: #4CAF50; /* Background color when checked */
+  }
+  
+  /* Custom checkmark for the checkbox */
+  .hidden-checkbox-gf:checked + .checkmark-gf::after {
+    content: '';
+    position: absolute;
+    left: 5px; /* Adjust position */
+    top: 1px; /* Adjust position */
+    width: 2px; /* Width of checkmark */
+    height: 9px; /* Height of checkmark */
+    border: solid white; /* Checkmark color */
+    border-width: 0 2px 2px 0; /* Checkmark shape */
+    transform: rotate(45deg); /* Rotate to form checkmark */
+  }
+  
+  .terms-text-gf{
+    font-size: 10px;
+    font-weight: 100;
+  }
+    .terms-link-gf {
+      font-size: 10px;
+      margin-left: 4px;
+      text-decoration: underline;
+      color: rgb(55, 153, 218); /* You can adjust the color as needed */
+      cursor: pointer;
+    }
+}
+
+@media (max-width:401px)
+{
+  .custom-checkbox-gf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .checkmark-gf {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #5fff64; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px; /* Space between checkbox and label */
+    position: relative;
+    transition: background 0.3s ease, transform 0.3s ease; /* Animation */
+  }
+  
+  /* When checked */
+  .hidden-checkbox-gf:checked + .checkmark-gf {
+    background: #4CAF50; /* Background color when checked */
+  }
+  
+  /* Custom checkmark for the checkbox */
+  .hidden-checkbox-gf:checked + .checkmark-gf::after {
+    content: '';
+    position: absolute;
+    left: 3px; /* Adjust position */
+    top: 1px; /* Adjust position */
+    width: 2px; /* Width of checkmark */
+    height: 6px; /* Height of checkmark */
+    border: solid white; /* Checkmark color */
+    border-width: 0 2px 2px 0; /* Checkmark shape */
+    transform: rotate(45deg); /* Rotate to form checkmark */
+  }
+  
+  .terms-text-gf{
+    font-size: 7px;
+    font-weight: 100;
+  }
+    .terms-link-gf {
+      font-size: 7px;
+      margin-left: 4px;
+      text-decoration: underline;
+      color: rgb(55, 153, 218); /* You can adjust the color as needed */
+      cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+  .get-in-touch {
+      padding: 8px; /* Adjust padding for tablets */
+  }
+
+  .rectangle {
+      padding: 8px 12px; /* Adjust padding for tablets */
+  }
+
+  .get-in-touch-text {
+      font-size: 14px; /* Smaller font size for tablets */
+  }
+
+  .circle-icon-container {
+      width: 40px; /* Adjust size for tablets */
+      height: 40px; /* Adjust size for tablets */
+  }
+
+  .circle-icon {
+      width: 20px; /* Adjust size for tablets */
+      height: 20px; /* Adjust size for tablets */
+  }
+
+  .contact-heading {
+      font-size: 35px; /* Smaller font size for tablets */
+      margin-top: 25px; /* Smaller margin for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .get-in-touch {
+      padding: 5px; /* Adjust padding for mobile */
+  }
+
+  .rectangle {
+      padding: 6px 10px; /* Adjust padding for mobile */
+  }
+
+  .get-in-touch-text {
+      font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .circle-icon-container {
+      width: 35px; /* Adjust size for mobile */
+      height: 35px; /* Adjust size for mobile */
+  }
+
+  .circle-icon {
+      width: 18px; /* Adjust size for mobile */
+      height: 18px; /* Adjust size for mobile */
+  }
+
+  .contact-heading {
+      font-size: 30px; /* Smaller font size for mobile */
+      margin-top: 20px; /* Smaller margin for mobile */
+  }
+}
