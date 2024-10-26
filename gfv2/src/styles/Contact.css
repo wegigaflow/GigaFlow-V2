@@ -340,15 +340,24 @@
   
 @media (max-width:686px)
 {
+  .contact-section {
+    padding: 10px;
+}
   .char-count-gf {
     margin-inline-start: 20rem;
     font-size: 0.9em; /* Adjust font size as needed */
     margin-top: 5px; /* Space between the textarea and character count */
   }
+  .text-area-field-gf::placeholder{
+    font-size: 12px;
+  }
 }
 
 @media (max-width:526px)
 {
+  .contact-section {
+    padding: 10px;
+}
   .char-count-gf {
     margin-inline-start: 15rem;
     font-size: 0.9em; /* Adjust font size as needed */
@@ -358,6 +367,9 @@
 
 @media (max-width:450px)
 {
+  .contact-section {
+    padding: 10px;
+}
   .char-count-gf {
     margin-inline-start: 1rem;
     font-size: 0.9em; /* Adjust font size as needed */
@@ -367,6 +379,9 @@
 
 @media (max-width:545px)
 {
+  .contact-section {
+    padding: 10px;
+}
   .custom-checkbox-gf {
     display: flex;
     align-items: center;
@@ -417,6 +432,9 @@
 
 @media (max-width:447px)
 {
+  .contact-section {
+    padding: 10px;
+}
   .custom-checkbox-gf {
     display: flex;
     align-items: center;
@@ -467,6 +485,9 @@
 
 @media (max-width:401px)
 {
+  .contact-section {
+    padding: 10px;
+}
   .custom-checkbox-gf {
     display: flex;
     align-items: center;
