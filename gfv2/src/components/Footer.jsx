@@ -60,7 +60,7 @@ const Footer = () => {
             <a href="https://x.com/gigaflowlabs" target="_blank" rel="noopener noreferrer">
               <img src={Twitter} alt="Twitter" />
             </a>
-            <a href="www.linkedin.com/in/gigaflow-labs" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/gigaflow-labs" target="_blank" rel="noopener noreferrer">
               <img src={Linkedin} alt="LinkedIn" />
             </a>
           </div>

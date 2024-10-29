@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Hiw.css';
-import useScrollReveal from '../hooks/useScrollReveal';
 // Import your icons here
 import IconSvg from '../assets/Bow.svg';
 import discoveryIcon from '../assets/Discovery.png';
@@ -10,9 +9,9 @@ import testingIcon from '../assets/Test.png';
 import supportIcon from '../assets/CS.png';
 
 const HIW = () => {
-  const ref = useScrollReveal('animate__fadeIn', { threshold: 0.1 });
   return (
-    <div id="Why Us" className="hiw-section">
+    <section id="Why Us">
+    <div  className="hiw-section">
       {/* Button */}
       <div className="hiw-button-container">
         <div className="hiw-button">
@@ -70,6 +69,7 @@ const HIW = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

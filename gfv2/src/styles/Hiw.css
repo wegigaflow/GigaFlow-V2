@@ -1,4 +1,8 @@
 @import 'animate.css';
+
+html{
+  scroll-behavior: smooth;
+}
 .hiw-section {
   width: 100%;
   background-color: #FAFFFF;

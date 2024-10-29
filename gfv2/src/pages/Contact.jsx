@@ -115,224 +115,235 @@ const Contact = () => {
     };
 
     return (
-        <div id="Contact Us" className="contact-section">
-            <div className="get-in-touch">
-                <div className="rectangle">
-                    <div className="get-in-touch-element">
-                        <span className="get-in-touch-text">Get in Touch</span>
-                        <div className="circle-icon-container">
-                            <img src={contact} alt="Contact" className="circle-icon" />
+        <section id="Contact Us">
+            <div className="contact-section">
+                <div className="get-in-touch">
+                    <div className="rectangle">
+                        <div className="get-in-touch-element">
+                            <span className="get-in-touch-text">Get in Touch</span>
+                            <div className="circle-icon-container">
+                                <img src={contact} alt="Contact" className="circle-icon" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <h1 className="contact-heading">Contact Us</h1>
-            <div className='contact-container-gf'>
-                <form className="contact-form-gf" onSubmit={handleSubmit}>
+                <h1 className="contact-heading">Contact Us</h1>
+                <div className='contact-container-gf'>
+                    <form className="contact-form-gf" onSubmit={handleSubmit}>
 
-                    {/** Full Name Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Full Name <span className="required-gf">*</span></label>
-                        <div className="input-container-gf">
-                            <img src={userIcon} alt="Full Name" className="icon-inside-gf" />
-                            <input
-                                type="text"
-                                name="fullName"
-                                value={formData.fullName}
-                                onChange={handleChange}
-                                placeholder="Eg: JohnDoe M"
-                                className="input-field-gf"
-                                required
-                            />
-                        </div>
-                    </div>
-
-                    {/** Email Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Email <span className="required-gf">*</span></label>
-                        <div className="input-container-gf">
-                            <img src={mailIcon} alt="Email" className="icon-inside-gf" />
-                            <input
-                                type="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                placeholder="Eg: xyz@abd.com"
-                                className="input-field-gf"
-                                required
-                            />
-                        </div>
-                    </div>
-
-                    {/** Phone Number Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Phone Number <span className="required-gf">*</span></label>
-                        <div className="input-container-gf">
-                            <img src={phoneIcon} alt="Phone Number" className="icon-inside-gf" />
-                            <input
-                                type="tel"
-                                name="phoneNumber"
-                                value={formData.phoneNumber}
-                                onChange={handleChange}
-                                placeholder="Eg: 1234567890"
-                                className="input-field-gf"
-                                required
-                            />
-                        </div>
-                    </div>
-
-                    {/** Company Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Company <span className="required-gf">*</span></label>
-                        <div className="input-container-gf">
-                            <img src={buildingIcon} alt="Company" className="icon-inside-gf" />
-                            <input
-                                type="text"
-                                name="company"
-                                value={formData.company}
-                                onChange={handleChange}
-                                placeholder="Eg: XYZ Ltd"
-                                className="input-field-gf"
-                                required
-                            />
-                        </div>
-                    </div>
-
-                    {/** Preferred Contact Method Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Preferred Contact Method <span className="required-gf">*</span></label>
-                        <div className="input-container-gf">
-                            <img src={phoneIcon} alt="Preferred Contact" className="icon-inside-gf" />
-                            <select
-                                name="preferredContact"
-                                value={formData.preferredContact}
-                                onChange={handleChange}
-                                className="input-field-gf"
-                                required
-                            >
-                                <option value="" className='option-gf'>Select</option>
-                                <option value="Zoom / GoogleMeet" className='option-gf'>Zoom / GoogleMeet</option>
-                                <option value="Call / Mail" className='option-gf'>Call / Mail</option>
-                                <option value="Whatsapp" className='option-gf'>Whatsapp</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    {/** Project Type Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Project Type <span className="required-gf">*</span></label>
-                        <div className="input-container-gf">
-                            <img src={projectIcon} alt="Project Type" className="icon-inside-gf" />
-                            <select
-                                name="projectType"
-                                value={formData.projectType}
-                                onChange={handleChange}
-                                className="input-field-gf"
-                                required
-                            >
-                                <option value="" className='option-gf'>Select</option>
-                                <option value="WebDevelopment" className='option-gf'>Web Development</option>
-                                <option value="WebDesign" className='option-gf'>Web Design</option>
-                                <option value="SEO Optimization" className='option-gf'>SEO Optimization</option>
-                                <option value="Digital Marketing" className='option-gf'>Digital Marketing</option>
-                                <option value="E-Commerce Development" className='option-gf'>E-Commerce Development</option>
-                                <option value="Inventory Management Portal" className='option-gf'>Inventory Management Portal</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    {/** Current Website Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Current Website <span className="required-gf">*</span></label>
-                        <div className="input-container-gf">
-                            <img src={globeIcon} alt="Current Website" className="icon-inside-gf" />
-                            <select
-                                name="currentWebsite"
-                                value={formData.currentWebsite}
-                                onChange={handleChange}
-                                className="input-field-gf"
-                                required
-                            >
-                                <option value="" className='option-gf'>Select</option>
-                                <option value="Yes & Needs Redesigned" className='option-gf'>Yes & Needs Redesigned</option>
-                                <option value="Yes, but need a minor update" className='option-gf'>Yes, but need a minor update</option>
-                                <option value="No, this is a new project" className='option-gf'>No, this is a new project</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    {/** Upload File Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Upload File (optional)</label>
-                        <div className="input-container-gf">
-                            <img src={fileAddIcon} alt="Upload File" className="icon-inside-gf" />
-                            <input
-                                type="file"
-                                placeholder="Documents like project briefs, designs, or other relevant files."
-                                name="file"
-                                accept=".pdf,.doc,.docx,.ppt,.pptx,.png,.jpg,.jpeg"
-                                onChange={handleFileChange}
-                                ref={fileInputRef}  // Add ref here
-                                className="input-field-gf"
-                            />
-                        </div>
-                        <span className="file-type-note-gf">Documents like project briefs, designs, or other relevant files.</span>
-                        <span className="file-size-note-gf">Note: The file size should be less than 50MB</span>
-                    </div>
-
-                    {/** Message Field */}
-                    <div className="form-group-gf">
-                        <label className="input-label-gf">Description <span className="required-gf">*</span></label>
-                        <div className="input-container-gf">
-                            <textarea
-                                name="message"
-                                value={formData.message}
-                                onChange={handleChange}
-                                placeholder="Give us the detailed description of your project..."
-                                className="text-area-field-gf"
-                                maxLength={characterLimit} // Set character limit
-                                required
-                            />
-
-                        </div>
-                        <div
-                            className="char-count-gf"
-                            style={{ color: messageLength > 9990 ? 'red' : 'white' }} // Change color based on character count
-                        >
-                            {messageLength} / {characterLimit}
-                        </div>
-                    </div>
-                    <div className="form-group-gf checkbox-container-gf">
-    <label className="custom-checkbox-gf">
-        <input
-            type="checkbox"
-            checked={isChecked}
-            onChange={handleCheckboxChange}
-            className="hidden-checkbox-gf" // Add class to hide the default checkbox
-        />
-        <span className="checkmark-gf"></span> {/* Custom checkmark */}
-        <span className='terms-text-gf'>By clicking this you agree to our </span><span className="terms-link-gf" onClick={toggleTermsModal}>Terms & Conditions</span>
-    </label>
-</div>
-
-                    <button type="submit"
-                        className={`submit-button-gf ${!isChecked ? 'disabled-button-gf' : ''}`}
-                        disabled={!isChecked}>Submit</button>
-                    {/* Terms & Conditions Modal */}
-                    {showTerms && (
-                        <div className="terms-modal-gf">
-                            <div className="modal-content-gf">
-                                <span className="close-gf" onClick={toggleTermsModal}>&times;</span>
-                                <h2>Terms & Conditions</h2>
-                                <p>Your terms and conditions go here...</p>
-                                {/* Add the rest of your Terms & Conditions content here */}
+                        {/** Full Name Field */}
+                        {/** Full Name Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="fullName" className="input-label-gf">Full Name <span className="required-gf">*</span></label>
+                            <div className="input-container-gf">
+                                <img src={userIcon} alt="Full Name" className="icon-inside-gf" />
+                                <input
+                                    type="text"
+                                    name="fullName"
+                                    id="fullName"  // Add id here
+                                    value={formData.fullName}
+                                    onChange={handleChange}
+                                    placeholder="Eg: JohnDoe M"
+                                    className="input-field-gf"
+                                    required
+                                />
                             </div>
                         </div>
-                    )}
-                </form>
-            </div>
 
-        </div>
+                        {/** Email Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="email" className="input-label-gf">Email <span className="required-gf">*</span></label>
+                            <div className="input-container-gf">
+                                <img src={mailIcon} alt="Email" className="icon-inside-gf" />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"  // Add id here
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    placeholder="Eg: xyz@abd.com"
+                                    className="input-field-gf"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        {/** Phone Number Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="phoneNumber" className="input-label-gf">Phone Number <span className="required-gf">*</span></label>
+                            <div className="input-container-gf">
+                                <img src={phoneIcon} alt="Phone Number" className="icon-inside-gf" />
+                                <input
+                                    type="tel"
+                                    name="phoneNumber"
+                                    id="phoneNumber"  // Add id here
+                                    value={formData.phoneNumber}
+                                    onChange={handleChange}
+                                    placeholder="Eg: 1234567890"
+                                    className="input-field-gf"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        {/** Company Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="company" className="input-label-gf">Company <span className="required-gf">*</span></label>
+                            <div className="input-container-gf">
+                                <img src={buildingIcon} alt="Company" className="icon-inside-gf" />
+                                <input
+                                    type="text"
+                                    name="company"
+                                    id="company"  // Add id here
+                                    value={formData.company}
+                                    onChange={handleChange}
+                                    placeholder="Eg: XYZ Ltd"
+                                    className="input-field-gf"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        {/** Preferred Contact Method Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="preferredContact" className="input-label-gf">Preferred Contact Method <span className="required-gf">*</span></label>
+                            <div className="input-container-gf">
+                                <img src={phoneIcon} alt="Preferred Contact" className="icon-inside-gf" />
+                                <select
+                                    name="preferredContact"
+                                    id="preferredContact"  // Add id here
+                                    value={formData.preferredContact}
+                                    onChange={handleChange}
+                                    className="input-field-gf"
+                                    required
+                                >
+                                    <option value="" className='option-gf'>Select</option>
+                                    <option value="Zoom / GoogleMeet" className='option-gf'>Zoom / GoogleMeet</option>
+                                    <option value="Call / Mail" className='option-gf'>Call / Mail</option>
+                                    <option value="Whatsapp" className='option-gf'>Whatsapp</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        {/** Project Type Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="projectType" className="input-label-gf">Project Type <span className="required-gf">*</span></label>
+                            <div className="input-container-gf">
+                                <img src={projectIcon} alt="Project Type" className="icon-inside-gf" />
+                                <select
+                                    name="projectType"
+                                    id="projectType"  // Add id here
+                                    value={formData.projectType}
+                                    onChange={handleChange}
+                                    className="input-field-gf"
+                                    required
+                                >
+                                    <option value="" className='option-gf'>Select</option>
+                                    <option value="WebDevelopment" className='option-gf'>Web Development</option>
+                                    <option value="WebDesign" className='option-gf'>Web Design</option>
+                                    <option value="SEO Optimization" className='option-gf'>SEO Optimization</option>
+                                    <option value="Digital Marketing" className='option-gf'>Digital Marketing</option>
+                                    <option value="E-Commerce Development" className='option-gf'>E-Commerce Development</option>
+                                    <option value="Inventory Management Portal" className='option-gf'>Inventory Management Portal</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        {/** Current Website Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="currentWebsite" className="input-label-gf">Current Website <span className="required-gf">*</span></label>
+                            <div className="input-container-gf">
+                                <img src={globeIcon} alt="Current Website" className="icon-inside-gf" />
+                                <select
+                                    name="currentWebsite"
+                                    id="currentWebsite"  // Add id here
+                                    value={formData.currentWebsite}
+                                    onChange={handleChange}
+                                    className="input-field-gf"
+                                    required
+                                >
+                                    <option value="" className='option-gf'>Select</option>
+                                    <option value="Yes & Needs Redesigned" className='option-gf'>Yes & Needs Redesigned</option>
+                                    <option value="Yes, but need a minor update" className='option-gf'>Yes, but need a minor update</option>
+                                    <option value="No, this is a new project" className='option-gf'>No, this is a new project</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        {/** Upload File Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="file" className="input-label-gf">Upload File (optional)</label>
+                            <div className="input-container-gf">
+                                <img src={fileAddIcon} alt="Upload File" className="icon-inside-gf" />
+                                <input
+                                    type="file"
+                                    id="file"  // Add id here
+                                    name="file"
+                                    accept=".pdf,.doc,.docx,.ppt,.pptx,.png,.jpg,.jpeg"
+                                    onChange={handleFileChange}
+                                    ref={fileInputRef}
+                                    className="input-field-gf"
+                                />
+                            </div>
+                            <span className="file-type-note-gf">Documents like project briefs, designs, or other relevant files.</span>
+                            <span className="file-size-note-gf">Note: The file size should be less than 50MB</span>
+                        </div>
+
+                        {/** Message Field */}
+                        <div className="form-group-gf">
+                            <label htmlFor="message" className="input-label-gf">Description <span className="required-gf">*</span></label>
+                            <div className="input-container-gf">
+                                <textarea
+                                    name="message"
+                                    id="message"  // Add id here
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    placeholder="Give us the detailed description of your project..."
+                                    className="text-area-field-gf"
+                                    maxLength={characterLimit}
+                                    required
+                                />
+                            </div>
+                            <div
+                                className="char-count-gf"
+                                style={{ color: messageLength > 9990 ? 'red' : 'white' }}
+                            >
+                                {messageLength} / {characterLimit}
+                            </div>
+                        </div>
+
+                        <div className="form-group-gf checkbox-container-gf">
+                            <label className="custom-checkbox-gf">
+                                <input
+                                    type="checkbox"
+                                    checked={isChecked}
+                                    onChange={handleCheckboxChange}
+                                    className="hidden-checkbox-gf" // Add class to hide the default checkbox
+                                />
+                                <span className="checkmark-gf"></span> {/* Custom checkmark */}
+                                <span className='terms-text-gf'>By clicking this you agree to our </span><span className="terms-link-gf" onClick={toggleTermsModal}>Terms & Conditions</span>
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                            className={`submit-button-gf ${!isChecked ? 'disabled-button-gf' : ''}`}
+                            disabled={!isChecked}>Submit</button>
+                        {/* Terms & Conditions Modal */}
+                        {showTerms && (
+                            <div className="terms-modal-gf">
+                                <div className="modal-content-gf">
+                                    <span className="close-gf" onClick={toggleTermsModal}>&times;</span>
+                                    <h2>Terms & Conditions</h2>
+                                    <p>Your terms and conditions go here...</p>
+                                    {/* Add the rest of your Terms & Conditions content here */}
+                                </div>
+                            </div>
+                        )}
+                    </form>
+                </div>
+
+            </div>
+        </section>
     );
 };
 

@@ -9,12 +9,12 @@ import ECommerce from '../assets/Ecom.png';
 import CRM from '../assets/crm.png';
 import IMP from '../assets/IMP.png';
 import DataAnalytics from '../assets/Da.png';
-import useScrollReveal from '../hooks/useScrollReveal';
 
 const Service = () => {
-  const ref = useScrollReveal('animate__fadeIn', { threshold: 0.1 });
+
   return (
-    <div id="Our Services" className="service-container">
+    <section id="Our Services">
+    <div  className="service-container">
       <div className="service-content">
         <div className="service-header">
           <div className="service-header-background">
@@ -66,6 +66,7 @@ const Service = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
